@@ -96,3 +96,8 @@ body {
     background-color: white;
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
+
+
+.form-input:hover {
+    border-color: #d0d0d0;
+}
