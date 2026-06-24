@@ -47,5 +47,10 @@ body {
     font-weight: 600;
 }
 
+.form-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
 
 
