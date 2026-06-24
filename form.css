@@ -88,3 +88,8 @@ body {
     font-family: inherit;
     background-color: #f9f9f9;
 }
+
+
+.form-input:focus {
+    outline: none;
+    border-color: #667eea;
