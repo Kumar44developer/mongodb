@@ -13,3 +13,8 @@ body {
     align-items: center;
     padding: 20px;
 }
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
