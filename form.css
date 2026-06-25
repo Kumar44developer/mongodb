@@ -116,3 +116,8 @@ body {
     background-color: white;
     color: #333;
 }
+
+.error-message {
+    font-size: 0.85em;
+    color: #e74c3c;
+    margin-top: 5px;
