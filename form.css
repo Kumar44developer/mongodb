@@ -128,3 +128,9 @@ body {
 .error-message.show {
     display: block;
 }
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
