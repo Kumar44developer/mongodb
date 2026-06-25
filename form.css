@@ -110,3 +110,7 @@ body {
     background-position: right 15px center;
     padding-right: 40px;
 }
+
+.form-select option {
+    padding: 10px;
+    background-color: white;
