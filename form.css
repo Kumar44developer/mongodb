@@ -124,3 +124,7 @@ body {
     display: none;
     animation: slideInDown 0.3s ease;
 }
+
+.error-message.show {
+    display: block;
+}
