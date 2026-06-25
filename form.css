@@ -139,3 +139,8 @@ body {
         transform: translateY(0);
     }
 }
+
+.form-input.error {
+    border-color: #e74c3c;
+    background-color: #ffe5e5;
+}
