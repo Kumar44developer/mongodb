@@ -178,3 +178,7 @@ body {
     cursor: not-allowed;
     transform: none;
 }
+
+.btn-text {
+    display: inline;
+}
