@@ -150,3 +150,8 @@ body {
     padding: 15px;
     font-size: 1.1em;
     font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
