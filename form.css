@@ -230,3 +230,9 @@ body {
 .error-banner.show {
     display: block;
 }
+
+.submissions-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #e0e0e0;
+}
