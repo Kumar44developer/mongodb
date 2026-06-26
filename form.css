@@ -212,3 +212,10 @@ body {
 .success-message.show {
     display: block;
 }
+
+
+
+.error-banner {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
