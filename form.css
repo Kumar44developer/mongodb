@@ -315,3 +315,8 @@ body {
     color: #555;
     word-break: break-word;
 }
+
+.no-submissions {
+    text-align: center;
+    color: #999;
+    padding: 30px;
