@@ -337,3 +337,9 @@ body {
     .submit-btn {
         font-size: 16px; /* Prevents zoom on mobile */
     }
+
+
+    .submission-field {
+        flex-direction: column;
+        gap: 5px;
+    }
