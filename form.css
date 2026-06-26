@@ -197,3 +197,8 @@ body {
         transform: rotate(360deg);
     }
 }
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 8px;
