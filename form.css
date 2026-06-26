@@ -271,3 +271,7 @@ body {
     max-height: 500px;
     overflow-y: auto;
 }
+
+.submissions-list.show {
+    display: block !important;
+}
