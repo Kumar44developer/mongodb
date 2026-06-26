@@ -343,3 +343,8 @@ body {
         flex-direction: column;
         gap: 5px;
     }
+
+    .submission-card {
+        padding: 15px;
+    }
+}
