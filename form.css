@@ -262,3 +262,7 @@ body {
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
+.view-btn:active {
+    transform: translateY(0);
+}
+
