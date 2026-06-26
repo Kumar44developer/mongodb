@@ -323,3 +323,8 @@ body {
     background: #f9f9f9;
     border-radius: 8px;
 }
+
+@media (max-width: 600px) {
+    .form-wrapper {
+        padding: 30px 20px;
+    }
