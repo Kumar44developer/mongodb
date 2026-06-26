@@ -250,3 +250,9 @@ body {
     color: white;
     border: none;
     border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    width: 100%;
+}
