@@ -310,3 +310,8 @@ body {
     color: #667eea;
     min-width: 120px;
 }
+
+.submission-value {
+    color: #555;
+    word-break: break-word;
+}
