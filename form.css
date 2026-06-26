@@ -308,3 +308,5 @@ body {
 .submission-label {
     font-weight: 600;
     color: #667eea;
+    min-width: 120px;
+}
