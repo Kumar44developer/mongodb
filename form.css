@@ -236,3 +236,7 @@ body {
     padding-top: 30px;
     border-top: 2px solid #e0e0e0;
 }
+
+.section-title {
+    font-size: 1.5em;
+    color: #333;
