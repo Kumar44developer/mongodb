@@ -285,3 +285,7 @@ body {
     animation: slideIn 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
+.submission-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateX(5px);
