@@ -208,3 +208,7 @@ body {
     font-weight: 500;
     animation: slideIn 0.5s ease;
 }
+
+.success-message.show {
+    display: block;
+}
