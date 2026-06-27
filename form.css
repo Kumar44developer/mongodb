@@ -348,3 +348,9 @@ body {
         padding: 15px;
     }
 }
+
+
+/* Scrollbar Styling */
+.submissions-list::-webkit-scrollbar {
+    width: 8px;
+}
