@@ -354,3 +354,8 @@ body {
 .submissions-list::-webkit-scrollbar {
     width: 8px;
 }
+
+.submissions-list::-webkit-scrollbar-thumb {
+    background: #667eea;
+    border-radius: 10px;
+}
