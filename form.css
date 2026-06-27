@@ -359,3 +359,7 @@ body {
     background: #667eea;
     border-radius: 10px;
 }
+
+.submissions-list::-webkit-scrollbar-thumb:hover {
+    background: #764ba2;
+}
