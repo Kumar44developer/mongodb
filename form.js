@@ -81,3 +81,9 @@ function validateField(field) {
             }
             break;
     }
+
+
+    if (!isValid) {
+        field.classList.add('error');
+        errorElement.textContent = errorMessage;
+        errorElement.classList.add('show');
