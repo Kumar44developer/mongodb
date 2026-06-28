@@ -38,3 +38,7 @@ function validateField(field) {
 
     let isValid = true;
     let errorMessage = '';
+
+
+    switch(fieldName) {
+        case 'regdNo':
