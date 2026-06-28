@@ -45,3 +45,8 @@ function validateField(field) {
             if (!value) {
                 isValid = false;
                 errorMessage = 'Registration Number is required';
+            } else if (value.length < 3) {
+                isValid = false;
+                errorMessage = 'Registration Number must be at least 3 characters';
+            }
+            break;
