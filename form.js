@@ -9,3 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
+        if (!validateForm()) {
+            return;
+        }
+
+        submitForm();
+    });
