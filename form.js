@@ -42,3 +42,6 @@ function validateField(field) {
 
     switch(fieldName) {
         case 'regdNo':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Registration Number is required';
