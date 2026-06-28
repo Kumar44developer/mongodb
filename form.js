@@ -129,3 +129,6 @@ async function submitForm() {
     const submitBtn = document.getElementById('submitBtn');
     const btnText = submitBtn.querySelector('.btn-text');
     const btnLoader = document.getElementById('btnLoader');
+    const successMessage = document.getElementById('successMessage');
+    const errorBanner = document.getElementById('errorBanner');
+    const errorBannerText = document.getElementById('errorBannerText');
