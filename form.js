@@ -5,3 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorBanner = document.getElementById('errorBanner');
     const viewSubmissionsBtn = document.getElementById('viewSubmissionsBtn');
     const submissionsList = document.getElementById('submissionsList');
+
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
