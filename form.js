@@ -132,3 +132,7 @@ async function submitForm() {
     const successMessage = document.getElementById('successMessage');
     const errorBanner = document.getElementById('errorBanner');
     const errorBannerText = document.getElementById('errorBannerText');
+
+
+    successMessage.style.display = 'none';
+    errorBanner.style.display = 'none';
