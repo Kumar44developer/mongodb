@@ -143,3 +143,7 @@ async function submitForm() {
         email: document.getElementById('email').value.trim(),
         branch: document.getElementById('branch').value
     };
+
+    submitBtn.disabled = true;
+    btnText.style.display = 'none';
+    btnLoader.style.display = 'block';
