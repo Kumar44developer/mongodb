@@ -114,3 +114,6 @@ function validateForm() {
             isFormValid = false;
         }
     });
+
+    return isFormValid;
+}
