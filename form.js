@@ -17,3 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     viewSubmissionsBtn.addEventListener('click', toggleSubmissions);
+
+    const inputs = form.querySelectorAll('.form-input');
+    inputs.forEach(input => {
+        input.addEventListener('blur', function() {
+            validateField(this);
+        });
