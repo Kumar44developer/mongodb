@@ -69,3 +69,7 @@ function validateField(field) {
             if (!value) {
                 isValid = false;
                 errorMessage = 'Email is required';
+                isValid = false;
+                errorMessage = 'Please enter a valid email address';
+            }
+            break;
