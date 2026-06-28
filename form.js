@@ -50,3 +50,8 @@ function validateField(field) {
                 errorMessage = 'Registration Number must be at least 3 characters';
             }
             break;
+
+        case 'name':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Name is required';
