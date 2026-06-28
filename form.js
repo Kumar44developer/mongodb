@@ -140,3 +140,6 @@ async function submitForm() {
     const formData = {
         regdNo: document.getElementById('regdNo').value.trim(),
         name: document.getElementById('name').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        branch: document.getElementById('branch').value
+    };
