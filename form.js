@@ -87,3 +87,10 @@ function validateField(field) {
         field.classList.add('error');
         errorElement.textContent = errorMessage;
         errorElement.classList.add('show');
+    } else {
+        field.classList.remove('error');
+        errorElement.classList.remove('show');
+    }
+
+    return isValid;
+}
