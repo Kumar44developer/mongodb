@@ -15,3 +15,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         submitForm();
     });
+
+    viewSubmissionsBtn.addEventListener('click', toggleSubmissions);
