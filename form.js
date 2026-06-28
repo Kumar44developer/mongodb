@@ -63,3 +63,9 @@ function validateField(field) {
                 errorMessage = 'Name should only contain letters and spaces';
             }
             break;
+
+
+        case 'email':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Email is required';
