@@ -23,3 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
         input.addEventListener('blur', function() {
             validateField(this);
         });
+
+        input.addEventListener('focus', function() {
+            clearFieldError(this);
+        });
+    });
+});
