@@ -101,3 +101,9 @@ function clearFieldError(field) {
     const errorElement = document.getElementById(field.name + 'Error');
     errorElement.classList.remove('show');
 }
+
+
+function validateForm() {
+    const form = document.getElementById('registrationForm');
+    const fields = form.querySelectorAll('.form-input');
+    let isFormValid = true;
