@@ -136,3 +136,7 @@ async function submitForm() {
 
     successMessage.style.display = 'none';
     errorBanner.style.display = 'none';
+
+    const formData = {
+        regdNo: document.getElementById('regdNo').value.trim(),
+        name: document.getElementById('name').value.trim(),
