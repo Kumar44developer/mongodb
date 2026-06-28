@@ -107,3 +107,10 @@ function validateForm() {
     const form = document.getElementById('registrationForm');
     const fields = form.querySelectorAll('.form-input');
     let isFormValid = true;
+
+
+    fields.forEach(field => {
+        if (!validateField(field)) {
+            isFormValid = false;
+        }
+    });
