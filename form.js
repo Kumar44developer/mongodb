@@ -94,3 +94,10 @@ function validateField(field) {
 
     return isValid;
 }
+
+
+function clearFieldError(field) {
+    field.classList.remove('error');
+    const errorElement = document.getElementById(field.name + 'Error');
+    errorElement.classList.remove('show');
+}
