@@ -29,3 +29,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function validateField(field) {
+    const fieldName = field.name;
+    const value = field.value.trim();
+    const errorElement = document.getElementById(fieldName + 'Error');
