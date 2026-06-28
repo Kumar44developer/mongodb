@@ -57,3 +57,9 @@ function validateField(field) {
                 errorMessage = 'Name is required';
             } else if (value.length < 3) {
                 isValid = false;
+                errorMessage = 'Name must be at least 3 characters';
+            } else if (!/^[a-zA-Z\s]+$/.test(value)) {
+                isValid = false;
+                errorMessage = 'Name should only contain letters and spaces';
+            }
+            break;
