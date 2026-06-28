@@ -55,3 +55,5 @@ function validateField(field) {
             if (!value) {
                 isValid = false;
                 errorMessage = 'Name is required';
+            } else if (value.length < 3) {
+                isValid = false;
