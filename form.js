@@ -73,3 +73,11 @@ function validateField(field) {
                 errorMessage = 'Please enter a valid email address';
             }
             break;
+
+        case 'branch':
+            if (!value) {
+                isValid = false;
+                errorMessage = 'Branch is required';
+            }
+            break;
+    }
