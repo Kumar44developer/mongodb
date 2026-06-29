@@ -201,3 +201,7 @@ async function toggleSubmissions() {
         viewSubmissionsBtn.textContent = 'Show All Registrations';
     }
 }
+
+async function loadSubmissions() {
+    const submissionsContent = document.getElementById('submissionsContent');
+    submissionsContent.innerHTML = '<div class="no-submissions">Loading...</div>';
