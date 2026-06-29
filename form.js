@@ -211,3 +211,9 @@ async function loadSubmissions() {
     try {
         const response = await fetch('/get-users');
         const result = await response.json();
+
+        if (result.success && result.data.length > 0) {
+            submissionsContent.innerHTML = '';
+            result.data.forEach((user, index) => {
+                const card = document.createElement('div');
+                card.className = 'submission-card';
