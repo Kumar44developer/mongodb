@@ -189,3 +189,9 @@ async function submitForm() {
 async function toggleSubmissions() {
     const submissionsList = document.getElementById('submissionsList');
     const viewSubmissionsBtn = document.getElementById('viewSubmissionsBtn');
+
+    if (submissionsList.style.display === 'none' || !submissionsList.style.display) {
+        await loadSubmissions();
+        submissionsList.style.display = 'block';
+        submissionsList.classList.add('show');
+        viewSubmissionsBtn.textContent = 'Hide All Registrations';
