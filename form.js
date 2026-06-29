@@ -220,3 +220,10 @@ async function loadSubmissions() {
 
                 const dateObj = new Date(user.createdAt);
                 const formattedDate = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString();
+
+
+                card.innerHTML = `
+                    <div class="submission-field">
+                        <span class="submission-label">Reg. No.:</span>
+                        <span class="submission-value">${escapeHtml(user.regdNo)}</span>
+                    </div>
