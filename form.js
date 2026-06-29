@@ -185,3 +185,7 @@ async function submitForm() {
         btnLoader.style.display = 'none';
     }
 }
+
+async function toggleSubmissions() {
+    const submissionsList = document.getElementById('submissionsList');
+    const viewSubmissionsBtn = document.getElementById('viewSubmissionsBtn');
