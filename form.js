@@ -249,3 +249,8 @@ async function loadSubmissions() {
         } else {
             submissionsContent.innerHTML = '<div class="no-submissions">No registrations yet.</div>';
         }
+    } catch (error) {
+        console.error('Error loading submissions:', error);
+        submissionsContent.innerHTML = '<div class="no-submissions">Error loading registrations. Please try again.</div>';
+    }
+}
