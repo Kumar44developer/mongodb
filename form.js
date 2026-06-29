@@ -239,3 +239,8 @@ async function loadSubmissions() {
                         <span class="submission-label">Branch:</span>
                         <span class="submission-value">${escapeHtml(user.branch)}</span>
                     </div>
+                    <div class="submission-field">
+                        <span class="submission-label">Registered:</span>
+                        <span class="submission-value">${formattedDate}</span>
+                    </div>
+                `;
