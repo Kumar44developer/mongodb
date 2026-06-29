@@ -217,3 +217,6 @@ async function loadSubmissions() {
             result.data.forEach((user, index) => {
                 const card = document.createElement('div');
                 card.className = 'submission-card';
+
+                const dateObj = new Date(user.createdAt);
+                const formattedDate = dateObj.toLocaleDateString() + ' ' + dateObj.toLocaleTimeString();
