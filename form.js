@@ -159,3 +159,7 @@ async function submitForm() {
 
         const result = await response.json();
 
+
+        if (result.success) {
+            successMessage.textContent = '✓ ' + result.message + ' Your data has been saved to MongoDB.';
+            successMessage.style.display = 'block';
