@@ -163,3 +163,9 @@ async function submitForm() {
         if (result.success) {
             successMessage.textContent = '✓ ' + result.message + ' Your data has been saved to MongoDB.';
             successMessage.style.display = 'block';
+
+            form.reset();
+
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
