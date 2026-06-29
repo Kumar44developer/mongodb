@@ -205,3 +205,9 @@ async function toggleSubmissions() {
 async function loadSubmissions() {
     const submissionsContent = document.getElementById('submissionsContent');
     submissionsContent.innerHTML = '<div class="no-submissions">Loading...</div>';
+
+
+
+    try {
+        const response = await fetch('/get-users');
+        const result = await response.json();
