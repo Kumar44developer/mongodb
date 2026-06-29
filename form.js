@@ -169,3 +169,8 @@ async function submitForm() {
             setTimeout(() => {
                 successMessage.style.display = 'none';
             }, 5000);
+
+        } else {
+            errorBannerText.textContent = '✗ ' + result.message;
+            errorBanner.style.display = 'block';
+        }
