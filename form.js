@@ -179,3 +179,9 @@ async function submitForm() {
         console.error('Error:', error);
         errorBannerText.textContent = '✗ An error occurred while submitting the form. Please try again.';
         errorBanner.style.display = 'block';
+        } finally {
+        submitBtn.disabled = false;
+        btnText.style.display = 'inline';
+        btnLoader.style.display = 'none';
+    }
+}
