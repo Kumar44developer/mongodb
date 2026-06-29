@@ -244,3 +244,8 @@ async function loadSubmissions() {
                         <span class="submission-value">${formattedDate}</span>
                     </div>
                 `;
+                submissionsContent.appendChild(card);
+            });
+        } else {
+            submissionsContent.innerHTML = '<div class="no-submissions">No registrations yet.</div>';
+        }
