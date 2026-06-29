@@ -254,3 +254,10 @@ async function loadSubmissions() {
         submissionsContent.innerHTML = '<div class="no-submissions">Error loading registrations. Please try again.</div>';
     }
 }
+
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
