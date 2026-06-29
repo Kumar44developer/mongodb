@@ -195,3 +195,9 @@ async function toggleSubmissions() {
         submissionsList.style.display = 'block';
         submissionsList.classList.add('show');
         viewSubmissionsBtn.textContent = 'Hide All Registrations';
+    } else {
+        submissionsList.style.display = 'none';
+        submissionsList.classList.remove('show');
+        viewSubmissionsBtn.textContent = 'Show All Registrations';
+    }
+}
