@@ -1,1 +1,9 @@
-
+{
+  "name": "mongodb-form-project",
+  "version": "1.0.0",
+  "description": "Registration form with MongoDB database integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
