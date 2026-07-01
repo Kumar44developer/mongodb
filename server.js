@@ -58,3 +58,8 @@ const Users = mongoose.model('User', userSchema);
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'form.html'));
 });
+
+
+app.post('/submit-form', async (req, res) => {
+  try {
+    const { regdNo, name, email, branch } = req.body;
