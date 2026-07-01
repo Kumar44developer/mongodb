@@ -43,3 +43,8 @@ const userSchema = new mongoose.Schema({
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, 'Please provide a valid email'],
     trim: true
   },
+  branch: {
+    type: String,
+    required: [true, 'Branch is required'],
+    enum: ['CSE', 'ECE', 'ME', 'CE', 'EEE']
+  },
