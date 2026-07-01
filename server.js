@@ -21,3 +21,6 @@ mongoose.connect(mongoURL, {
 .then(() => {
   console.log('✅ MongoDB connection successful');
 })
+.catch((err) => {
+  console.log('❌ MongoDB connection error:', err.message);
+});
