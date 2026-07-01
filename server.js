@@ -70,3 +70,11 @@ app.post('/submit-form', async (req, res) => {
         message: 'All fields are required'
       });
     }
+
+    const existingUser = await Users.findOne({ regdNo });
+    if (existingUser) {
+      return res.status(400).json({
+        success: false,
+        message: 'Registration Number already exists'
+      });
+    }
