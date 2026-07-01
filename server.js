@@ -48,3 +48,8 @@ const userSchema = new mongoose.Schema({
     required: [true, 'Branch is required'],
     enum: ['CSE', 'ECE', 'ME', 'CE', 'EEE']
   },
+  createdAt: {  
+    type: Date,
+    default: Date.now
+  }
+});
