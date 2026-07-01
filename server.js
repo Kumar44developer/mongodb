@@ -166,3 +166,10 @@ app.put('/update-user/:regdNo', async (req, res) => {
       message: 'User updated successfully',
       data: updatedUser
     });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
