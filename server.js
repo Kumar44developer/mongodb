@@ -153,3 +153,10 @@ app.put('/update-user/:regdNo', async (req, res) => {
       { name, email, branch },
       { new: true, runValidators: true }
     );
+
+    if (!updatedUser) {
+      return res.status(404).json({
+        success: false,
+        message: 'User not found'
+      });
+    }
