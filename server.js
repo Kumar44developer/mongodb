@@ -24,3 +24,11 @@ mongoose.connect(mongoURL, {
 .catch((err) => {
   console.log('❌ MongoDB connection error:', err.message);
 });
+
+const userSchema = new mongoose.Schema({
+  regdNo: {
+    type: String,
+    required: [true, 'Registration Number is required'],
+    unique: true,
+    trim: true
+  },
