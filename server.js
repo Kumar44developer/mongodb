@@ -86,3 +86,11 @@ app.post('/submit-form', async (req, res) => {
       email,
       branch
     });
+
+    const savedUser = await newUser.save();
+
+    return res.status(201).json({
+      success: true,
+      message: 'Registration successful!',
+      data: savedUser
+    });
