@@ -147,3 +147,9 @@ app.put('/update-user/:regdNo', async (req, res) => {
   try {
     const { regdNo } = req.params;
     const { name, email, branch } = req.body;
+
+    const updatedUser = await Users.findOneAndUpdate(
+      { regdNo },
+      { name, email, branch },
+      { new: true, runValidators: true }
+    );
