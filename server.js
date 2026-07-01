@@ -119,3 +119,14 @@ app.get('/get-users', async (req, res) => {
     });
   }
 });
+
+
+app.get('/get-user/:regdNo', async (req, res) => {
+  try {
+    const user = await Users.findOne({ regdNo: req.params.regdNo });
+    if (!user) {
+      return res.status(404).json({
+        success: false,
+        message: 'User not found'
+      });
+    }
