@@ -94,3 +94,13 @@ app.post('/submit-form', async (req, res) => {
       message: 'Registration successful!',
       data: savedUser
     });
+
+
+  } catch (error) {
+    console.error('Error:', error);
+    return res.status(500).json({
+      success: false,
+      message: error.message || 'Error submitting form'
+    });
+  }
+});
