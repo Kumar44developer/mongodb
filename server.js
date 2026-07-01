@@ -78,3 +78,11 @@ app.post('/submit-form', async (req, res) => {
         message: 'Registration Number already exists'
       });
     }
+
+
+    const newUser = new Users({
+      regdNo,
+      name,
+      email,
+      branch
+    });
