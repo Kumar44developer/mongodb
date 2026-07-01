@@ -112,3 +112,10 @@ app.get('/get-users', async (req, res) => {
       success: true,
       data: users
     });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
