@@ -12,3 +12,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.static(path.join(__dirname)));
+
+const mongoURL = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/students';
+mongoose.connect(mongoURL, {
+  useNewUrlParser: true,
