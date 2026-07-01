@@ -141,3 +141,9 @@ app.get('/get-user/:regdNo', async (req, res) => {
     });
   }
 });
+
+
+app.put('/update-user/:regdNo', async (req, res) => {
+  try {
+    const { regdNo } = req.params;
+    const { name, email, branch } = req.body;
