@@ -130,3 +130,7 @@ app.get('/get-user/:regdNo', async (req, res) => {
         message: 'User not found'
       });
     }
+    return res.status(200).json({
+      success: true,
+      data: user
+    });
