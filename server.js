@@ -16,3 +16,8 @@ app.use(express.static(path.join(__dirname)));
 const mongoURL = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/students';
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+.then(() => {
+  console.log('✅ MongoDB connection successful');
+})
