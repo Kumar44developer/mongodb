@@ -134,3 +134,10 @@ app.get('/get-user/:regdNo', async (req, res) => {
       success: true,
       data: user
     });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
