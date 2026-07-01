@@ -63,3 +63,10 @@ app.get('/', (req, res) => {
 app.post('/submit-form', async (req, res) => {
   try {
     const { regdNo, name, email, branch } = req.body;
+
+    if (!regdNo || !name || !email || !branch) {
+      return res.status(400).json({
+        success: false,
+        message: 'All fields are required'
+      });
+    }
