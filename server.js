@@ -160,3 +160,9 @@ app.put('/update-user/:regdNo', async (req, res) => {
         message: 'User not found'
       });
     }
+
+    return res.status(200).json({
+      success: true,
+      message: 'User updated successfully',
+      data: updatedUser
+    });
