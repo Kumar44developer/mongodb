@@ -104,3 +104,11 @@ app.post('/submit-form', async (req, res) => {
     });
   }
 });
+
+app.get('/get-users', async (req, res) => {
+  try {
+    const users = await Users.find({});
+    return res.status(200).json({
+      success: true,
+      data: users
+    });
