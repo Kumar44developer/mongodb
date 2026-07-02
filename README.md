@@ -12,3 +12,16 @@ A complete full-stack registration form application with HTML, CSS, JavaScript f
 ✅ **View All Submissions** - Display all registered students
 ✅ **Error Handling** - Comprehensive error management
 ✅ **RESTful API** - Clean API endpoints
+
+## Project Structure
+
+```
+mongodb/
+├── server.js           # Express server & MongoDB connection
+├── form.html          # HTML form interface
+├── form.css           # CSS styling
+├── form.js            # Frontend JavaScript & validation
+├── package.json       # Dependencies
+├── .env              # Environment variables
+├── .gitignore        # Git ignore file
+└── README.md         # This file
