@@ -191,3 +191,10 @@ app.delete('/delete-user/:regdNo', async (req, res) => {
       success: true,
       message: 'User deleted successfully'
     });
+  } catch (error) {
+    return res.status(500).json({
+      success: false,
+      message: error.message
+    });
+  }
+});
