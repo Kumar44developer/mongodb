@@ -173,3 +173,7 @@ app.put('/update-user/:regdNo', async (req, res) => {
     });
   }
 });
+
+app.delete('/delete-user/:regdNo', async (req, res) => {
+  try {
+    const { regdNo } = req.params;
