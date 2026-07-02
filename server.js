@@ -179,3 +179,10 @@ app.delete('/delete-user/:regdNo', async (req, res) => {
     const { regdNo } = req.params;
 
     const deletedUser = await Users.findOneAndDelete({ regdNo });
+
+    if (!deletedUser) {
+      return res.status(404).json({
+        success: false,
+        message: 'User not found'
+      });
+    }
