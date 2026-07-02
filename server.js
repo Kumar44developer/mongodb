@@ -202,3 +202,7 @@ app.delete('/delete-user/:regdNo', async (req, res) => {
 app.use((err, req, res, next) => {
   console.error('Error:', err);
   res.status(500).json({
+    success: false,
+    message: 'Internal server error'
+  });
+});
